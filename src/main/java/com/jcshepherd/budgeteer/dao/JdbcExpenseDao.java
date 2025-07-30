@@ -40,7 +40,7 @@ public class JdbcExpenseDao implements ExpenseDao{
     @Override
     public List<Expense> getExpenses() {
         List<Expense> expenses = new ArrayList<>();
-        String sql = "SELECT * FROM expense ORDER BY expense_name";
+        String sql = "SELECT * FROM expense ORDER BY expense_date DESC";
 
         try{
             SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
