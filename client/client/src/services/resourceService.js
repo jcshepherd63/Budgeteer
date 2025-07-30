@@ -13,7 +13,6 @@ const resourceService = {
     getExpenseByName(){
         return axios.get(`/expenses/expensename/${expense_name}`)
     },
-    // getExpenseByValue
+};
 
-
-}
+export { resourceService };
