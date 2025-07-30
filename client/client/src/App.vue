@@ -1,13 +1,19 @@
 <template>
   <header id = header >
     <h1>Budgeteer</h1>
-    <nav id = budgeteerNav >
+    <nav id = budgeteerNav>
       <router-link :to = "{ name: 'home'}" class="nav-link"> 
         HOME
       </router-link>
-      <button>Login</button>
-      <button>Logout</button>
-      <button>Current Goals</button>
+      <router-link :to = "{ name: 'login'}" class="nav-link">
+        LOGIN
+      </router-link>
+      <!-- <router-link :to = "{name: 'Logout'}" class="nav-link">
+        Logout
+      </router-link>
+      <router-link :to = "{name: 'currentGoals'}" class="nav-link">
+        Current Goals
+      </router-link> -->
     </nav>
   </header>
   <router-view/>
