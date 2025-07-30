@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import LoginView from '../views/LoginView.vue';
+import LogoutView from '../views/LogoutView.vue';
+import CurrentGoals from '../views/CurrentGoals.vue';
 
 const routes = [
     {
@@ -13,6 +15,16 @@ const routes = [
     name: 'login',
     component: LoginView,
     },
+    {
+    path: '/logout',
+    name: 'logout',
+    component: LogoutView
+    },
+    {
+    path: '/currentGoals',
+    name: 'currentGoals',
+    component: CurrentGoals
+    }
 ]
 
 const router = createRouter({

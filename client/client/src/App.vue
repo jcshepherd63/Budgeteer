@@ -8,12 +8,12 @@
       <router-link :to = "{ name: 'login'}" class="nav-link">
         LOGIN
       </router-link>
-      <!-- <router-link :to = "{name: 'Logout'}" class="nav-link">
-        Logout
-      </router-link>
+      <router-link :to = "{name: 'logout'}" class="nav-link">
+        LOGOUT
+      </router-link> 
       <router-link :to = "{name: 'currentGoals'}" class="nav-link">
-        Current Goals
-      </router-link> -->
+        CURRENT GOALS
+      </router-link>
     </nav>
   </header>
   <router-view/>
