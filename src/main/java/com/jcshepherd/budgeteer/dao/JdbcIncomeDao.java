@@ -43,7 +43,7 @@ public class JdbcIncomeDao implements  IncomeDao{
     @Override
     public List<Income> getIncomes() {
         List<Income> incomes = new ArrayList<>();
-        String sql = "SELECT * FROM income ORDER BY income_name";
+        String sql = "SELECT * FROM income ORDER BY income_date DESC";
 
         try{
             SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
