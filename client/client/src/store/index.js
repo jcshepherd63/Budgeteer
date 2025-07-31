@@ -10,7 +10,7 @@ export function createStore(currentToken, currentUser) {
             token: currentToken || '',
         },
         mutations: {
-            SET_CURRENT_INCOMES(state, income) {
+            setIncomes(state, income) {
                 state.incomes = income;
             }
         }

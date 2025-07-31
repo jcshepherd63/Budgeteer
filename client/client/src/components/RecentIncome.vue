@@ -5,8 +5,9 @@
         </h2>
         <section id="income">
         <ul>
-            <li v-for="income in incomes" :key="income.id">
-                {{ income.incomeamount }} - {{ income.incomedate }} - {{ income.incomeName }}
+            <li v-for="income in incomes" :key="income.id"
+                :class="{selected: income.id === $store.state.selectedIncome}">
+                ${{ income.incomeValue }} // {{ income.incomeDate }} // {{ income.incomeName }}
             </li>
         </ul>
         </section>
@@ -24,7 +25,7 @@ export default {
     },
     methods: {
         selected(incomeID) {
-            this.$store.commit('setSelectedIncome', incomeID);
+            this.$store.commit('setIncome', incomeID);
         },
     }
 }
